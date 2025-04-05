@@ -1,0 +1,39 @@
+// conection fonts
+@import "_fonts.scss";
+// reset styles
+@import "_reset.scss";
+
+// !vars
+$backgrounColor: #04011f;
+$primeryTextColor: #ffffff;
+$accentColor: #f7a428;
+
+body {
+  font-family: "Inter", sans-serif;
+  font-size: 20px;
+  color: $primeryTextColor;
+}
+
+// !wrapper
+.wrapper {
+  overflow: clip;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+
+.wrapper > main {
+  flex-grow: 1;
+}
+
+// !container
+[class*="__container"] {
+  max-width: 1230px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+}
+
+// header
+
+@import "_header.scss";

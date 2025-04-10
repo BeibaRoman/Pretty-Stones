@@ -145,7 +145,7 @@ body {
 @media (max-width: 425.98px) {
   .button {
     font-size: 1rem;
-    padding: 0.8125rem 1.875rem;
+    padding: 0.9375rem 2.0625rem;
   }
 }
 .button--small {
@@ -480,7 +480,7 @@ body {
 }
 @media (max-width: 425.98px) {
   .hero__title {
-    font-size: 1.625rem;
+    font-size: 1.75rem;
   }
 }
 .hero__text {

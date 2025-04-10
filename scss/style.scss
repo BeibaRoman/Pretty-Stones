@@ -1,39 +1,28 @@
-// conection fonts
-@import "_fonts.scss";
+// functions
+@import "./functions/functions";
+
+//utils
+//variables
+@import "./utils/variables";
+//hidden
+@import "./utils/hidden";
+
+//base
+// fonts
+@import "./base/fonts";
 // reset styles
-@import "_reset.scss";
+@import "./base/reset";
+//common
+@import "./base/common";
 
-// !vars
-$backgrounColor: #04011f;
-$primeryTextColor: #ffffff;
-$accentColor: #f7a428;
+// components
+// container
+@import "./components/container";
+// button
+@import "./components/button";
 
-body {
-  font-family: "Inter", sans-serif;
-  font-size: 20px;
-  color: $primeryTextColor;
-}
-
-// !wrapper
-.wrapper {
-  overflow: clip;
-  display: flex;
-  flex-direction: column;
-  min-height: 100%;
-}
-
-.wrapper > main {
-  flex-grow: 1;
-}
-
-// !container
-[class*="__container"] {
-  max-width: 1230px;
-  padding-left: 15px;
-  padding-right: 15px;
-  margin: 0 auto;
-}
-
+// layouts
 // header
-
-@import "_header.scss";
+@import "./layouts/header";
+// hero
+@import "./layouts/hero";

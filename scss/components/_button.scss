@@ -1,0 +1,35 @@
+.button {
+  font-size: toRem(28);
+  line-height: 1;
+  color: var(--primary-text-color);
+
+  padding: toRem(17) toRem(38);
+  background-color: var(--button-color);
+  border-radius: toRem(2);
+
+  transition: all 0.3s;
+
+  &:hover {
+    background-color: #b26b00;
+    color: #adadad;
+  }
+
+  @media (max-width: 425.98px) {
+    font-size: toRem(16);
+    padding: toRem(13) toRem(30);
+  }
+
+  &--small {
+    font-size: toRem(20);
+    font-weight: 700;
+    padding: toRem(13) toRem(28);
+
+    @media (max-width: 425.98px) {
+      font-size: toRem(18);
+      font-weight: 700;
+      line-height: 1;
+
+      padding: toRem(8) toRem(15);
+    }
+  }
+}

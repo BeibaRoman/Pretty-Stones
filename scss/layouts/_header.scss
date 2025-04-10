@@ -1,27 +1,27 @@
 .header {
-  // .header__container
   position: fixed;
   width: 100%;
-  background-color: #000;
-
+  background-color: var(--bgc-header);
+  z-index: 50;
+  // .header__container
   &__container {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    column-gap: 92px;
-    row-gap: 5px;
-    min-height: 106px;
+    column-gap: toRem(92);
+    row-gap: toRem(5);
+    min-height: toRem(106);
 
     @media (max-width: 1010.98px) {
-      min-height: 80px;
-      column-gap: 60px;
+      min-height: toRem(80);
+      column-gap: toRem(60);
     }
 
     @media (max-width: 929.98px) {
-      column-gap: 40px;
+      column-gap: toRem(40);
     }
     @media (max-width: 425.98px) {
-      column-gap: 20px;
+      column-gap: toRem(20);
     }
   }
 
@@ -30,7 +30,7 @@
   &__nav {
     display: flex;
     align-items: center;
-    column-gap: 40px;
+    column-gap: toRem(40);
     flex-grow: 1;
   }
 
@@ -40,40 +40,40 @@
     flex-shrink: 0;
     z-index: 3;
     display: flex;
-    gap: 30px;
+    gap: toRem(30);
     align-items: center;
     @media (max-width: 425.98px) {
-      gap: 15px;
+      gap: toRem(15);
     }
   }
 }
 .logo {
-  font-style: italic;
   font-weight: 700;
-  font-size: 30px;
+  font-style: italic;
+  font-size: toRem(30);
   flex-grow: 1;
   flex-shrink: 0;
   z-index: 3;
 
   @media (max-width: 929.98px) {
-    font-size: 26px;
+    font-size: toRem(26);
   }
 
   @media (max-width: 425.98px) {
-    font-size: 20px;
+    font-size: toRem(20);
   }
 }
 .menu {
   // .menu__item
   display: flex;
   align-items: center;
-  column-gap: 36px;
+  column-gap: toRem(36);
   @media (max-width: 1010.98px) {
-    column-gap: 26px;
+    column-gap: toRem(26);
   }
 
   @media (max-width: 929.98px) {
-    column-gap: 22px;
+    column-gap: toRem(22);
   }
 
   @media (max-width: 825.98px) {
@@ -82,15 +82,15 @@
     height: 100%;
     top: 0;
     left: -100%;
-    padding: 80px 20px 30px 20px;
+    padding: toRem(80) toRem(20) toRem(30) toRem(20);
     flex-direction: column;
     flex-wrap: nowrap;
     align-items: end;
 
-    background-color: $backgrounColor;
+    background-color: var(--main-bgc);
     overflow: auto;
 
-    row-gap: 25px;
+    row-gap: toRem(25);
     transition: left 0.5s ease;
 
     &::before {
@@ -98,10 +98,10 @@
       position: fixed;
       top: 0;
       left: -100%;
-      height: 80px;
+      height: toRem(80);
       width: 100%;
       z-index: 2;
-      background-color: #000;
+      background-color: var(--bgc-header);
       transition: left 0.5s ease;
     }
   }
@@ -119,51 +119,29 @@
 
   &__link {
     line-height: 1;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding-top: toRem(10);
+    padding-bottom: toRem(10);
 
     transition: all 0.3s;
 
     @media (max-width: 929.98px) {
-      font-size: 18px;
+      font-size: toRem(18);
     }
 
     @media (max-width: 825.98px) {
-      font-size: 30px;
+      font-size: toRem(30);
     }
   }
 }
-.button {
-  font-weight: 700;
-  line-height: 1;
 
-  padding: 13px 28px;
-  background-color: $accentColor;
-  border-radius: 2px;
-
-  transition: all 0.3s;
-
-  &:hover {
-    background-color: #b26b00;
-    color: #adadad;
-  }
-
-  @media (max-width: 425.98px) {
-    font-size: 18px;
-    font-weight: 700;
-    line-height: 1;
-
-    padding: 8px 15px;
-  }
-}
 .icon-menu {
   display: none;
 
   @media (max-width: 825.98px) {
     display: block;
-    flex: 0 0 30px;
-    width: 30px;
-    height: 18px;
+    flex: 0 0 toRem(30);
+    width: toRem(30);
+    height: toRem(18);
     position: relative;
 
     &::before {
@@ -172,8 +150,8 @@
       top: 0;
       left: 0;
       width: 100%;
-      height: 2px;
-      background-color: $primeryTextColor;
+      height: toRem(2);
+      background-color: var(--primary-text-color);
       transition: all 0.3s;
     }
     &::after {
@@ -182,8 +160,8 @@
       left: 0;
       bottom: 0;
       width: 100%;
-      height: 2px;
-      background-color: $primeryTextColor;
+      height: toRem(2);
+      background-color: var(--primary-text-color);
       transition: all 0.3s;
     }
 
@@ -192,10 +170,10 @@
       position: absolute;
       left: 0;
       top: 50%;
-      margin-top: -1px;
+      margin-top: toRem(-1);
       width: 100%;
-      height: 2px;
-      background-color: $primeryTextColor;
+      height: toRem(2);
+      background-color: var(--primary-text-color);
       transition: all 0.3s;
     }
   }
@@ -208,13 +186,13 @@
   .icon-menu::before {
     transform: rotate(-45deg);
     top: 50%;
-    margin-top: -1px;
+    margin-top: toRem(-1);
   }
 
   .icon-menu::after {
     transform: rotate(45deg);
     top: 50%;
-    margin-bottom: -1px;
+    margin-bottom: toRem(-1);
   }
   body {
     overflow: hidden;

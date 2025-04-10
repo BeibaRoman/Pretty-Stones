@@ -1,0 +1,17 @@
+body {
+  font-family: "Merriweather", sans-serif;
+  font-size: 20px;
+  color: var(--primary-text-color);
+}
+
+// !wrapper
+.wrapper {
+  overflow: clip;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+
+.wrapper > main {
+  flex-grow: 1;
+}

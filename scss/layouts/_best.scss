@@ -1,0 +1,125 @@
+.best {
+  position: relative;
+  padding-top: toRem(80);
+  padding-bottom: toRem(160);
+  background-color: var(--main-bgc);
+
+  // .best__decore-line
+
+  &__decore-line {
+    position: absolute;
+    top: toRem(-90);
+    right: 0;
+    height: 100%;
+    width: toRem(90);
+    z-index: 0;
+    pointer-events: none;
+
+    svg {
+      height: 100%;
+      width: 100%;
+    }
+  }
+
+  // .best__container
+
+  &__container {
+  }
+
+  // .best__title
+
+  &__title {
+    font-family: "DM Serif Text", sans-serif;
+    font-size: toRem(58);
+    line-height: 1;
+
+    margin-bottom: toRem(27);
+  }
+
+  // .best__lable
+
+  &__lable {
+    font-family: "Cormorant Infant", sans-serif;
+    font-weight: 700;
+    font-size: toRem(30);
+    line-height: 1.4;
+    color: var(--second-text-color);
+
+    margin-bottom: toRem(66);
+  }
+
+  // .best__list
+
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: toRem(45);
+  }
+
+  // .best__item
+
+  &__item {
+    background-color: var(--card-bgc);
+    border: 1px solid rgba(232, 239, 237, 0.29);
+    border-radius: toRem(5) toRem(5) toRem(15) toRem(15);
+  }
+
+  // .best__wrapper-image
+
+  &__wrapper-image {
+    img {
+      width: 100%;
+      height: 100%;
+      aspect-ratio: 364/265;
+      object-fit: cover;
+      border-radius: toRem(5);
+    }
+  }
+
+  &__wrapper-text {
+    padding: toRem(24) toRem(24) toRem(18) toRem(24);
+  }
+
+  // .best__sub-title
+
+  &__sub-title {
+    font-family: "DM Serif Text", sans-serif;
+    font-size: toRem(18);
+
+    margin-bottom: toRem(23);
+  }
+
+  // .best__body
+
+  &__body {
+    display: flex;
+    justify-content: space-between;
+
+    margin-bottom: toRem(23);
+  }
+
+  // .best__calendar
+
+  &__calendar {
+    display: flex;
+    gap: toRem(8);
+    font-family: "Inter", sans-serif;
+    font-size: toRem(16);
+  }
+
+  // .best__time
+
+  &__time {
+    font-family: "Inter", sans-serif;
+    font-size: toRem(16);
+    letter-spacing: 0.06em;
+  }
+
+  // .best__description
+
+  &__description {
+    font-family: "DM Serif Text", sans-serif;
+    font-size: toRem(16);
+    text-decoration: underline;
+  }
+}

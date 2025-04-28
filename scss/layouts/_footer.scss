@@ -30,6 +30,9 @@
 
   &__contacts {
     margin-bottom: toRem(21);
+    @media (max-width: 637.68px) {
+      margin-bottom: toRem(16);
+    }
   }
 
   // .footer__phone
@@ -42,6 +45,15 @@
     line-height: 1.4;
 
     margin-bottom: toRem(9);
+
+    @media (max-width: 637.68px) {
+      font-size: toRem(26);
+      margin-bottom: toRem(10);
+    }
+
+    @media (max-width: 425.68px) {
+      font-size: toRem(20);
+    }
   }
 
   // .footer__email
@@ -53,6 +65,15 @@
     line-height: 1.4;
 
     margin-bottom: toRem(17);
+
+    @media (max-width: 637.68px) {
+      font-size: toRem(36);
+      margin-bottom: toRem(10);
+    }
+
+    @media (max-width: 425.68px) {
+      font-size: toRem(24);
+    }
   }
 
   // .footer__address
@@ -71,6 +92,10 @@
     justify-content: center;
 
     margin-bottom: toRem(32);
+
+    @media (max-width: 637.68px) {
+      margin-bottom: toRem(22);
+    }
   }
 
   // .footer__nav
@@ -93,18 +118,37 @@
     }
 
     margin-bottom: toRem(68);
+
+    @media (max-width: 637.68px) {
+      gap: toRem(30);
+      margin-bottom: toRem(38);
+    }
+
+    @media (max-width: 425.68px) {
+      gap: toRem(20);
+    }
   }
 
   // .footer__bottom
 
   &__bottom {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
+    align-items: center;
+    gap: toRem(20);
+    @media (max-width: 846.98px) {
+      justify-content: center;
+    }
   }
 
   // .footer__copyright
 
   &__copyright {
+    @media (max-width: 637.68px) {
+      font-size: toRem(16);
+      line-height: 1.2;
+    }
   }
 
   // .footer__payments
